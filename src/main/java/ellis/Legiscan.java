@@ -66,8 +66,6 @@ public class Legiscan {
                 .thenApply(Legiscan::prettyPrintJson)
                 .thenAccept(Legiscan::writeToFile)
                 .join();
-
-        // System.out.println(API_URL);
     }
 
     private static void writeToFile(String data) {
